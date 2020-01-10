@@ -140,20 +140,12 @@ WSGI_APPLICATION = 'xiaopgg_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'xpgg_oms',    # 你的数据库名称
-        'USER': 'xiaopgg',   # 你的数据库用户名
-        'PASSWORD': '123456',  # 你的数据库密码
-        'HOST': '',  # 你的数据库主机，留空默认为localhost
-        'PORT': '3306',  # 你的数据库端口,
-
-        'OPTIONS': {
-        # 在mysql5.7以前需要加下面的来使得同步数据库时候不会出现严格模式的警告，5.7开始默认是严格模式了就可以省略
-        #     'init_command': "SET sql_mode= 'STRICT_TRANS_TABLES'",
-        # 如果InnoDB Strict Mode也是严格模式也需要加下面的
-        #     'init_command': 'SET innodb_strict_mode=1',
-        #     之前是通过utf8创建的数据库，所以下面的这个注释掉，如果用utf8mb4可以试着打开这个
-        #     'charset': 'utf8mb4',
-        },
+        'NAME': 'omsdate',
+        'USER': 'tester',
+        'PASSWORD': '123456',
+        'HOST': '',
+        'PORT': '3306',
+        #'OPTIONS': ,
     }
 }
 
